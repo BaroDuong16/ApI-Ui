@@ -38,7 +38,7 @@ const layoutModules = [
 
 @NgModule({
     declarations: [
-        LayoutComponent
+        LayoutComponent,
     ],
     imports: [
         MatIconModule,
