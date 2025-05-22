@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable } from '@angular/core'; 
 import { HttpClient } from '@angular/common/http';
 import { Observable, ReplaySubject } from 'rxjs';
 import { map, tap } from 'rxjs/operators';
@@ -67,4 +67,13 @@ export class UserService
             })
         );
     }
+    /**
+     * Delete the user by ID
+     *
+     * @param id User ID to delete
+     */
+    delete(): Observable<any>{
+        return this._httpClient.delete(this.apiUrl);
+    }
+
 }
